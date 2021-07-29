@@ -155,7 +155,7 @@ pub fn zero(dst: &mut [u8]) {
 
 /// A fixed size buffer of N bytes useful for cryptographic operations.
 #[derive(Clone)]
-pub(crate) struct FixedBuffer<const N: usize> {
+pub  struct FixedBuffer<const N: usize> {
     buffer: [u8; N],
     buffer_idx: usize,
 }
